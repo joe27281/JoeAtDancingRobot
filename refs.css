@@ -1,0 +1,105 @@
+.stage {
+    top: 150px;
+    font-size: 40px;
+    text-align: center;
+    left: 0px;
+    top: 0px;
+    width: 90%;
+    height: 800px;
+    background: lightblue  ;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .wholebody {
+    background: lightblue;
+    
+    /* To hide uncomment this*/
+    /* background: #ddd; */
+    
+    margin-left: 400px;
+    margin-top: -20px;
+    width: 240px;
+    height: 400px;
+    margin-top: 160px;
+    animation: example 30s;
+    /*animation-iteration-count: 1; */
+    }
+    
+    @keyframes example {
+        0%   {margin-left: 20%;}
+        3%   {margin-left: 20%;}
+        6%   {margin-left: 70%;}
+        12%  {margin-left: 20%;}
+        20%  {margin-left: 70%;}
+    /* first 6 seconds ^^^ */
+    /* starts moving again at 11 seconds */
+        50%  {margin-left: 70%;}
+        56% {margin-left: 20%;}
+        62% {margin-left: 70%;}
+    /* 11 seconds ^^^ */
+    /* starts moving again at 22 seconds till end (100%) */
+        80% {margin-left: 70%;}
+        85% {margin-left: 20%;}
+        100% {margin-left: 70%;}
+      }
+
+    /* body movements for whole video ^^^^ */
+
+    
+
+    /* put arms and leg code here ^^ */
+
+    .head {
+    background: black;
+    width: 50%;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    }
+    .body {
+    background: black;
+    width: 50%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    display: inline-block;
+    }
+    .Larm{
+    display: inline-block;
+    background: black;
+    width: 30px;
+    height: 200px;
+    border-radius: 10%;
+    }
+    .Rarm{
+    display: inline-block;
+    background: black;
+    width: 30px;
+    height: 200px;
+    border-radius: 10%;
+    }
+    .Lleg{
+    display: inline-block;
+    background: black;
+    width: 40px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    }
+    .Rleg{
+    display: inline-block;
+    background: black;
+    width: 40px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
