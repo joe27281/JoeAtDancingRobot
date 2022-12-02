@@ -131,6 +131,8 @@
     65%{transform-origin: top; transform: rotate(-360deg)}
     75%{transform-origin: top; transform: rotate(90deg)}
 
+}
+
 @keyframes Rleg{
 
 }
