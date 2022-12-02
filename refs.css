@@ -29,30 +29,6 @@
     animation: example 30s;
     /*animation-iteration-count: 1; */
     }
-    
-    @keyframes example {
-        0%   {margin-left: 20%;}
-        3%   {margin-left: 20%;}
-        6%   {margin-left: 70%;}
-        12%  {margin-left: 20%;}
-        20%  {margin-left: 70%;}
-    /* first 6 seconds ^^^ */
-    /* starts moving again at 11 seconds */
-        50%  {margin-left: 70%;}
-        56% {margin-left: 20%;}
-        62% {margin-left: 70%;}
-    /* 11 seconds ^^^ */
-    /* starts moving again at 22 seconds till end (100%) */
-        80% {margin-left: 70%;}
-        85% {margin-left: 20%;}
-        100% {margin-left: 70%;}
-      }
-
-    /* body movements for whole video ^^^^ */
-
-    
-
-    /* put arms and leg code here ^^ */
 
     .head {
     background: black;
@@ -78,6 +54,8 @@
     width: 30px;
     height: 200px;
     border-radius: 10%;
+    animation: Larm 30s;
+    animation-delay: 4s;
     }
     .Rarm{
     display: inline-block;
@@ -85,6 +63,8 @@
     width: 30px;
     height: 200px;
     border-radius: 10%;
+    animation: Rarm 30s;
+    animation-delay: 3s;
     }
     .Lleg{
     display: inline-block;
@@ -94,6 +74,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
+    animation: Lleg 30s;
     }
     .Rleg{
     display: inline-block;
@@ -103,3 +84,59 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
+    animation: Rleg 30s;
+    }
+    
+/* keyframes below */
+
+@keyframes example {
+    0%{margin-left: 20%;}
+    3%{margin-left: 20%;}
+    6%{margin-left: 70%;}
+    12%{margin-left: 20%;}
+    20%{margin-left: 70%;}
+/* first 6 seconds ^^^ */
+/* starts moving again at 11 seconds */
+    50%{margin-left: 70%;}
+    56%{margin-left: 20%;}
+    62%{margin-left: 70%;}
+/* 11 seconds ^^^ */
+/* starts moving again at 22 seconds till end (100%) */
+    85%{margin-left: 70%;}
+    90%{margin-left: 20%;}
+    95%{margin-left: 70%;}
+  }
+
+/* body movements for whole video ^^^^ */
+
+@keyframes Rarm{
+    5%{transform-origin: top; transform: rotate(180deg)}
+    10%{transform-origin: top; transform: rotate(360deg)}
+/* first moves */    
+    15%{transform-origin: top; transform: rotate(360deg)}
+    20%{transform-origin: top; transform: rotate(270deg)}
+    25%{transform-origin: top; transform: rotate(360deg)}
+
+}
+
+@keyframes Larm{
+    5%{transform-origin: top; transform: rotate(-180deg)}
+    10%{transform-origin: top; transform: rotate(-360deg)}
+/* first moves */
+    11%{transform-origin: top; transform: rotate(-360deg)}
+    20%{transform-origin: top; transform: rotate(-270deg)}
+    25%{transform-origin: top; transform: rotate(-360deg)}
+
+    60%{transform-origin: top; transform: rotate(-360deg)}
+    65%{transform-origin: top; transform: rotate(-360deg)}
+    75%{transform-origin: top; transform: rotate(90deg)}
+
+@keyframes Rleg{
+
+}
+
+@keyframes Lleg{
+
+}
+
+/* put arms and leg code here ^^ */
